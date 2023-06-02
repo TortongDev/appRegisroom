@@ -1,6 +1,6 @@
 <?php
-    spl_autoload_register('loadclass');
-    function loadclass($class){
+
+    function autoload_cdn(){
         $pathAll = array(
             "./node_modules/bootstrap/dist/css",
             "./public/css",
@@ -17,4 +17,5 @@
             endif;
         }
     }
+    autoload_cdn();
 ?>

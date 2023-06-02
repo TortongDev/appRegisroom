@@ -6,6 +6,7 @@
             $this->values           = $values;
             $this->processStatus    = $processStatus;
             $this->openConnection();
+
         }
         public function run()
         {
@@ -51,6 +52,7 @@
         }
         public function __destruct(){
             $this->closeConnection();
+            
         }
     }
 
