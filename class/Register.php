@@ -31,5 +31,4 @@ class Register {
 
     }
 }
-new Register;
 ?>
