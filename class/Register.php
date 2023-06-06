@@ -24,8 +24,6 @@ class Register {
             self::$DateofBirt
         ];
         $stmt = "INSERT INTO `tb_profile`(`P_NAME`, `P_DETAIL`, `P_STATUS`) VALUES (?,?,?)";
-        
-
         $db = new CRUD('insert',$stmt,$dataAll);
         $db->run();
 

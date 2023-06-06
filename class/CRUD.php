@@ -44,6 +44,15 @@
                         echo "Insert : ".$err->getMessage();
                     }
                 break;
+                case 'selectAll':
+                    try {
+                        $select = parent::$db->prepare($this->sql);
+                        $select->execute($this->values);
+                        return $select->fetchAll();
+                    } catch (PDOException $err) {
+                        echo "Insert : ".$err->getMessage();
+                    }
+                break;
                 
                 default:
                         # code...
